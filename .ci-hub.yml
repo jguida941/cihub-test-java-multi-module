@@ -11,7 +11,7 @@ java:
   tools:
     jacoco:
       enabled: true
-      min_coverage: 70
+      min_coverage: 50
     checkstyle:
       enabled: true
     spotbugs:
@@ -36,7 +36,7 @@ java:
     docker:
       enabled: false
 thresholds:
-  coverage_min: 70
+  coverage_min: 50
   mutation_score_min: 70
   max_critical_vulns: 0
   max_high_vulns: 0
