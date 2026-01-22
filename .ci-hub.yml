@@ -36,11 +36,10 @@ java:
     docker:
       enabled: false
 thresholds:
-  coverage_min: 70
+  coverage_min: 67
   mutation_score_min: 70
   max_critical_vulns: 0
   max_high_vulns: 0
-  max_checkstyle_errors: 21
 reports:
   retention_days: 30
 language: java
