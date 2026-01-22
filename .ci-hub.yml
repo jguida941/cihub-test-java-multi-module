@@ -3,7 +3,7 @@ repo:
   owner: jguida941
   name: cihub-test-java-multi-module
   language: java
-  default_branch: main
+  default_branch: audit/cihub-test-java-multi-module/20260123
   dispatch_workflow: hub-ci.yml
 java:
   version: '21'
@@ -11,7 +11,7 @@ java:
   tools:
     jacoco:
       enabled: true
-      min_coverage: 50
+      min_coverage: 70
     checkstyle:
       enabled: true
     spotbugs:
@@ -36,10 +36,11 @@ java:
     docker:
       enabled: false
 thresholds:
-  coverage_min: 50
+  coverage_min: 70
   mutation_score_min: 70
   max_critical_vulns: 0
   max_high_vulns: 0
+  max_checkstyle_errors: 21
 reports:
   retention_days: 30
 language: java
